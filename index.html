@@ -142,13 +142,13 @@
             <div style="display:flex;flex-direction:column;gap:14px">
                 <div>
                     <label style="display:block;font-size:10px;font-weight:700;color:rgba(255,255,255,0.4);letter-spacing:2px;margin-bottom:8px">EMAIL ADDRESS</label>
-                    <input id="login-email" type="email" autocomplete="email" class="login-input" placeholder="donations@vadtaldhamperth.org"
+                    <input id="login-email" type="email" autocomplete="off" class="login-input" placeholder="Email address"
                         onkeydown="if(event.key==='Enter')document.getElementById('login-password').focus()">
                 </div>
                 <div>
                     <label style="display:block;font-size:10px;font-weight:700;color:rgba(255,255,255,0.4);letter-spacing:2px;margin-bottom:8px">PASSWORD</label>
                     <div style="position:relative">
-                        <input id="login-password" type="password" autocomplete="current-password" class="login-input" placeholder="••••••••"
+                        <input id="login-password" type="password" autocomplete="off" class="login-input" placeholder="••••••••"
                             onkeydown="if(event.key==='Enter')loginStep1()" style="padding-right:52px">
                         <button type="button" onclick="togglePwVisibility()" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;color:rgba(255,255,255,0.35);cursor:pointer;padding:4px">
                             <i data-lucide="eye" id="pw-eye-icon" style="width:18px;height:18px"></i>
